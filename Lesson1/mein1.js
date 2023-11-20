@@ -45,6 +45,7 @@ let firstName = "Elon";
 let middleName = "Musk";
 let lastName = "Petrovich";
 console.log(firstName + ' ' + middleName + ' ' + lastName);
+console.log(`${firstName} ${middleName} ${lastName} `);
 
 console.log('-----1.3------');
 
