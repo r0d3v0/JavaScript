@@ -1,4 +1,6 @@
 console.log('-----1.1------');
+//- Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+// Вивести кожну змінну за допомогою: console.log
 
 let str1 = 'hello';
  console.log(str1)
@@ -40,6 +42,8 @@ let str1 = 'hello';
  console.log(bol2)
 
  console.log('-----1.2------');
+//- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person (Не об'єкт, просто за допомоги конкатенації)
+//
 
 let firstName = "Elon";
 let middleName = "Musk";
@@ -48,6 +52,9 @@ console.log(firstName + ' ' + middleName + ' ' + lastName);
 console.log(`${firstName} ${middleName} ${lastName} `);
 
 console.log('-----1.3------');
+// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+//   let a = 100; let b = '100'; let c = true;
+
 
 let a = 100; let b = '100'; let c = true;
 
@@ -56,11 +63,24 @@ console.log(typeof b);
 console.log(typeof c);
 
 console.log('-----1.4------');
+// Додаткове для тих хто цікавився prompt`oм
+// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
+// тільки тут вік   має бути число.
 
 let firstName4 = prompt("Введіть ваше ім'я")
 let middleName4 = prompt("Введіть ваше Прізвище")
-let age4 = prompt("Введіть ваш вік")
+let  age4 = prompt("Введіть ваш вік")
+let  age5 = +age4
 
 console.log(firstName4)
 console.log(middleName4)
-console.log(age4)
+console.log(age5)
+
+console.log('-----черновик------');
+// тільки тут вік має бути число.
+// S TO N
+ let ns = '100500';
+ let nn = +ns;
+ console.log(nn);
+ let number = parseInt('100500asdasdsa');
+ console.log(number);
