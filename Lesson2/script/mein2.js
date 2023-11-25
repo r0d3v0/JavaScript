@@ -1,3 +1,5 @@
+||||||| TEST ||||||  це не дз
+
 let time = 59
 if (time > 45 && time <= 59) {
     console.log('time:4/4')
