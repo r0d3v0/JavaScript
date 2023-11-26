@@ -13,31 +13,28 @@ console.log('це великий масив');
 //     Знайти, яке з них є середнім (більше одного, але менше за інше). Перевірити, чи знаходиться перше число між двома іншими.
 //
 
-let num1 = 3
-let num2 = 1
-let num3 = 2
+let num1 = 234
+let num2 = 4234
+let num3 = 523
 let middleNumber;
 
-if ((num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3)) {
-    middleNumber = num1;
-} else if ((num2 > num1 && num2 < num3) || (num2 < num1 && num2 > num3)) {
-    middleNumber = num2;
-} else {
-    middleNumber = num3;
-}
-console.log("Середнє число: " +middleNumber);
+if ((num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3)) {middleNumber = num1;}
+else if ((num2 > num1 && num2 < num3) || (num2 < num1 && num2 > num3)) {middleNumber = num2;}
+else {middleNumber = num3;}
 
+console.log("Середнє число : " +middleNumber);
 let betweenOthers = (num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3);
-
-console.log("Перше число знаходиться між двома іншими: " + betweenOthers);
+console.log("Перше число між двома іншими: " + betweenOthers);
 
 // - Перепишіть конструкцію if з використанням умовного оператора '?':
-// let result;
-// if (a + b < 4) {
-//     result = 'Мало';
-// } else {
-//     result = 'Багато';
-// }
+
+let result;
+if (a + b < 4) {
+    result = 'Мало';
+} else {
+    result = 'Багато';
+}
+
 //
 //
 // - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
