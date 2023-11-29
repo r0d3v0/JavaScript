@@ -22,27 +22,33 @@ if ((num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3)) {middleNumber 
 else if ((num2 > num1 && num2 < num3) || (num2 < num1 && num2 > num3)) {middleNumber = num2;}
 else {middleNumber = num3;}
 
+
 console.log("Середнє число : " +middleNumber);
 let betweenOthers = (num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3);
 console.log("Перше число між двома іншими: " + betweenOthers);
 
 // - Перепишіть конструкцію if з використанням умовного оператора '?':
 
-let result;
-if (a + b < 4) {
-    result = 'Мало';
-} else {
-    result = 'Багато';
-}
-
-//
+// let result;
+// if (a + b < 4) {
+//     result = 'Мало';
+// } else {
+//     result = 'Багато';
+// }
+let a11 = 3
+let b22 = 2
+let cheack = (a11 + b22 < 4) ? 'Мало' : 'Багато';
+console.log(cheack);
 //
 // - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
 // напишіть це тернарним оператором
 //
-//
-//
-//
+
+let w1 = 0;
+
+let w2 = (w1 > 0) ? 'Позитивне' : (w1 < 0) ? 'Негативне' : 'Нуль';
+
+console.log(w2);
 //
 //
 //
