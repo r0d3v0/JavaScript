@@ -1,12 +1,12 @@
 // // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 //
-// function calculate1(a, b) {
-//     return a * b;
-// }
-//
-//
-// let result = calculate1(5, 8);
-// console.log(result);
+function calculate1(a, b) {
+    return a * b;
+}
+
+
+let result = calculate1(2, 8);
+console.log(result);
 //
 // // - створити функцію яка обчислює та повертає площу кола з радіусом r
 //
@@ -41,11 +41,11 @@
 //
 //
 // // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
-// function ppp(text) {
-//            document.write(`<p>${text}</p>`)
-// }
-// ppp('Hmmmm');
-// ppp(`Paragpaph`)
+function ppp(text) {
+           document.write(`<p>${text}</p>`)
+}
+ppp('Hmmmm');
+ppp(`Paragpaph`)
 //
 // // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 //
@@ -154,6 +154,16 @@ function exchange(sumUAH,currencyValues,exchangeCurrency) {
     }
 }
 
-console.log(exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'USD'));
+
+console.log(exchange(50000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'USD'));
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 console.log(exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'EUR'));
+
+let dddd22 = prompt(`дай пять`)
+console.log(dddd22);
+
+
+
+
+
+

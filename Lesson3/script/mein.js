@@ -59,6 +59,7 @@ for (let i = 0; i < listOfItems.length; i++) {
 document.write(`</ul>`)
 
 
+
 document.write(`<hr>`)
 document.write(`<hr>`)
 // -----------------------------------------------
@@ -154,3 +155,5 @@ for (const user of users) {
     }
 
 }
+
+console.log(listOfItems);

@@ -1,45 +1,45 @@
 console.log('-----1.1------');
 //- Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
 // Вивести кожну змінну за допомогою: console.log
-
-let str1 = 'hello';
- console.log(str1)
-
- let str2 = 'owu';
- console.log(str2)
-
- let str3 = 'com';
- console.log(str3)
-
- let str4 = 'ua';
- console.log(str4)
-
- let numb1 = 1;
- console.log(numb1)
-
- let numb2 = 10;
- console.log(numb2)
-
- let numb3 = -999;
- console.log(numb3)
-
- let numb4 = 123;
- console.log(numb4)
-
- let numb5 = 3.14;
- console.log(numb5)
-
- let numb6 = 2.7;
- console.log(numb6)
-
- let numb7 = 16;
- console.log(numb7)
-
- let bol1 = true;
- console.log(bol1)
-
- let bol2 = false;
- console.log(bol2)
+//
+// let str1 = 'hello';
+//  console.log(str1)
+//
+//  let str2 = 'owu';
+//  console.log(str2)
+//
+//  let str3 = 'com';
+//  console.log(str3)
+//
+//  let str4 = 'ua';
+//  console.log(str4)
+//
+//  let numb1 = 1;
+//  console.log(numb1)
+//
+//  let numb2 = 10;
+//  console.log(numb2)
+//
+//  let numb3 = -999;
+//  console.log(numb3)
+//
+//  let numb4 = 123;
+//  console.log(numb4)
+//
+//  let numb5 = 3.14;
+//  console.log(numb5)
+//
+//  let numb6 = 2.7;
+//  console.log(numb6)
+//
+//  let numb7 = 16;
+//  console.log(numb7)
+//
+//  let bol1 = true;
+//  console.log(bol1)
+//
+//  let bol2 = false;
+//  console.log(bol2)
 
  console.log('-----1.2------');
 //- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person (Не об'єкт, просто за допомоги конкатенації)
