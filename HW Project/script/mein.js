@@ -6,7 +6,7 @@
 
 
 
-// Отримання масиву користувачів з API
+
 let url = new URL("https://jsonplaceholder.typicode.com/users");
 
 fetch(url)
@@ -14,7 +14,7 @@ fetch(url)
     .then(users => {
         console.log(users);
 
-        // Створення елементів для кожного користувача
+
         for (const user of users) {
             let div = document.createElement('div');
             let p = document.createElement('p');
@@ -31,12 +31,9 @@ fetch(url)
 
             document.body.appendChild(div);
 
-            // Додаємо подію click для кнопки "DETAILS"
             btn.addEventListener('click', () => {
-                // Переадресація на сторінку user-details.html з параметром userID
                 document.location.href = `user-details.html?userID=${user.id}`;
             })
-
             btnDel.addEventListener('click', ()=>{
                 deleted(user.id);
                 p.style.display='none';
@@ -44,7 +41,6 @@ fetch(url)
                 btnDel.style.display='none';
             })
         }
-
         function deleted(id){
             fetch(url+id)
                 .then(res=>res.json())
@@ -52,7 +48,6 @@ fetch(url)
                 console.log('DELETED CONFIRM: ', value)
             })
         }
-
     })
 
 
