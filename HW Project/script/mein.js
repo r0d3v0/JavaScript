@@ -6,14 +6,12 @@
 
 
 
-
 let url = new URL("https://jsonplaceholder.typicode.com/users");
 
 fetch(url)
     .then(response => response.json())
     .then(users => {
         console.log(users);
-
 
         for (const user of users) {
             let div = document.createElement('div');
@@ -33,22 +31,25 @@ fetch(url)
 
             btn.addEventListener('click', () => {
                 document.location.href = `user-details.html?userID=${user.id}`;
-            })
-            btnDel.addEventListener('click', ()=>{
+            });
+
+            btnDel.addEventListener('click', () => {
                 deleted(user.id);
-                p.style.display='none';
-                btn.style.display='none';
-                btnDel.style.display='none';
-            })
+                p.style.display = 'none';
+                btn.style.display = 'none';
+                btnDel.style.display = 'none';
+            });
         }
-        function deleted(id){
-            fetch(url+id)
-                .then(res=>res.json())
-                .then(value=>{
-                console.log('DELETED CONFIRM: ', value)
-            })
+
+        function deleted(id) {
+            fetch(url + id)
+                .then(res => res.json())
+                .then(value => {
+                    console.log('DELETED CONFIRM: ', value);
+                });
         }
-    })
+    });
+
 
 
     // На странице user-details.html:
