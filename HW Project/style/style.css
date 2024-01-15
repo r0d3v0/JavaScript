@@ -1,20 +1,64 @@
-/* styles.css */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Основний шрифт */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background: linear-gradient(to right, #8A2BE2, #3321, #8A2BE2);
 }
 
-.container {
+body {
+    background: linear-gradient(to right, #8A2BE2, #3321, #8A2BE2);
+}
+
+.container-boundaries {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
 .user-block {
-    width: 48%;
-    display: inline-block;
+    width: 33%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+button,
+.common-btn,
+.comments-btn,
+.post-btn,
+.user-block button {
+    font-family: 'Open Sans', sans-serif; /* Шрифт для кнопок */
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.user-details-container,
+#userPostsContainer,
+.post-details {
+    font-family: 'Dancing Script', cursive; /* Загальний шрифт для інших контейнерів */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.user-details {
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
@@ -22,6 +66,54 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.user-block p {
-    margin: 0;
-    font-size:
+.user-details p {
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.post-item {
+    width: 50%;
+    margin: 0 auto; /* Центрування блока */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#postDetailsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.post-details {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-item {
+    font-family: 'Dancing Script', cursive;
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

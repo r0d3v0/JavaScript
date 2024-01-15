@@ -3,9 +3,6 @@
 // 2 Вивести id,name всіх user в index.html. Окремий блок для кожного user.
 // 3 Додати кожному блоку кнопку/посилання , при кліку на яку відбувається перехід  на сторінку user-details.html, котра має детальну інфорацію про об'єкт на який клікнули
 //
-
-
-
 let url = new URL("https://jsonplaceholder.typicode.com/users");
 
 fetch(url)
@@ -13,21 +10,36 @@ fetch(url)
     .then(users => {
         console.log(users);
 
+        let userContainer = document.createElement('div');
+        userContainer.classList.add('user-container');
+
         for (const user of users) {
-            let div = document.createElement('div');
+            let userBlock = document.createElement('div');
+            userBlock.classList.add('user-block');
+
+            let userDetails = document.createElement('div');
+            userDetails.classList.add('user-details'); // Замінив 'user-container' на 'user-details'
+
             let p = document.createElement('p');
-            let btn = document.createElement('button');
-            let btnDel = document.createElement('button');
-
-            div.append(p);
-            div.append(btn);
-            div.append(btnDel);
-
             p.innerText = `${user.id}- ${user.name}`;
-            btn.innerText = `DETAILS`;
-            btnDel.innerText = `DELETE`;
+            userContainer.classList.add('user-par');
 
-            document.body.appendChild(div);
+            let btn = document.createElement('button');
+            btn.innerText = `DETAILS`;
+            btn.classList.add('details-btn');
+
+            let btnDel = document.createElement('button');
+            btnDel.innerText = `DELETE`;
+            btnDel.classList.add('details-btn');
+
+            userDetails.appendChild(p);
+            userDetails.appendChild(btn);
+            userDetails.appendChild(btnDel);
+
+            userBlock.appendChild(userDetails);
+            userContainer.appendChild(userBlock);
+
+            document.body.appendChild(userContainer);
 
             btn.addEventListener('click', () => {
                 document.location.href = `user-details.html?userID=${user.id}`;
@@ -51,7 +63,6 @@ fetch(url)
     });
 
 
-
     // На странице user-details.html:
 // 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
 // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
@@ -68,3 +79,4 @@ fetch(url)
 //     блоки з короткою іфною про post - в ряд по 5 .
 //     post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.
 //     Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)
+
