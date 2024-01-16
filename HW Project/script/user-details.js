@@ -47,7 +47,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
                     console.log(posts);
 
                     for (const post of posts) {
-                        if (userId == post.userId) {
+
                             let postDiv = document.createElement('div');
                             let postId = document.createElement('p');
                             let postDetails = document.createElement('p');
@@ -72,7 +72,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
                             commentsBtn.addEventListener('click', () => {
                                 document.location.href = `post-details.html?postID=${post.id}`;
                             });
-                        }
+
                     }
                 });
         });

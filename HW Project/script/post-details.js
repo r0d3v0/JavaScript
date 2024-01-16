@@ -34,11 +34,11 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
                     let commentDetails = document.createElement('p');
                     commentDetails.classList.add('comment-item');
                     commentDetails.innerText =
-                        `Name - ${comment.name}\n
-                        postId - ${comment.postId}\n
-                        ID - ${comment.id}\n
-                        Commentary: \n - ${comment.body}\n
-                        email - ${comment.email}\n
+                        `Name - ${comment.name}
+                        PostID - ${comment.postId}
+                        ID - ${comment.id}
+                        Commentary:  - ${comment.body}
+                        Email - ${comment.email}
                     `;
                     commentsDiv.appendChild(commentDetails);
                 }

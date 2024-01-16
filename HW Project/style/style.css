@@ -1,6 +1,5 @@
 
 body {
-    font-family: 'Montserrat', sans-serif; /* Основний шрифт */
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #8A2BE2, #3321, #8A2BE2);
@@ -9,6 +8,20 @@ body {
 body {
     background: linear-gradient(to right, #8A2BE2, #3321, #8A2BE2);
 }
+p{
+    margin: 3px;
+    padding: 3px;
+}
+.post-info,
+.indent {
+    font-family: 'Dancing Script', cursive;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .container-boundaries {
     max-width: 1200px;
@@ -33,11 +46,9 @@ body {
 }
 
 button,
-.common-btn,
-.comments-btn,
 .post-btn,
 .user-block button {
-    font-family: 'Open Sans', sans-serif; /* Шрифт для кнопок */
+    font-family: 'Open Sans', sans-serif;
     display: block;
     margin-top: 10px;
     padding: 10px;
@@ -47,40 +58,66 @@ button,
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
+
+}
+.comments-btn{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+
 }
 
 .user-details-container,
-#userPostsContainer,
 .post-details {
-    font-family: 'Dancing Script', cursive; /* Загальний шрифт для інших контейнерів */
+    font-family: 'Dancing Script', cursive;
     width: 70%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .user-details {
+    font-family: 'Dancing Script', cursive;
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .user-details p {
-    text-align: center; /* Вирівнювання тексту по центру */
+    text-align: center;
 }
 
 .post-item {
     width: 50%;
-    margin: 0 auto; /* Центрування блока */
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #postDetailsContainer {
